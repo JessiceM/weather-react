@@ -42,7 +42,7 @@ function App() {
       </div>
     </div>
     <p>
-      <a href="https://github.com/JessiceM/Weather-App">Open-source code</a>{" "}
+      <a href="https://github.com/JessiceM/weather-react">Open-source code</a>{" "}
       by Jessica Mendoza
     </p>
   </div>
