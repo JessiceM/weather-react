@@ -1,38 +1,129 @@
-.App {
+body {
+  font-family: "Pushster", cursive;
+  color: rgb(90, 98, 117);
+}
+.background {
+  background: linear-gradient(
+    -225deg,
+    rgb(82, 113, 196) 0%,
+    rgb(177, 159, 255) 48%,
+    rgb(236, 161, 254) 100%
+  );
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 10px solid #ad8bff;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 70px;
+  position: relative;
+  top: -25px;
+  left: 15px;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h3,
+h4 {
+  text-align: center;
+  margin: 10px;
+}
+h1::first-letter {
+  text-transform: capitalize;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li::first-letter {
+  text-transform: capitalize;
+}
+.units {
+  font-size: 25px;
+  position: relative;
+  top: -15px;
+  padding: 0;
+}
+
+.weather {
+  position: relative;
+  top: -15px;
+  right: -10px;
+  font-size: 70px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rounded-circle {
+  margin: 20px auto;
+  padding: 10px;
+  width: 200px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rounded-pill {
+  margin: 20px auto;
+  padding: 20px;
+  width: 500px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.rounded {
+  margin: 20px auto;
+  padding: 20px;
+  width: 500px;
+}
+.search {
+  position: relative;
+  left: 200px;
+  bottom: 0;
+}
+.col {
+  font-size: 20px;
+}
+p {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.inputBox {
+  border-radius: 5px;
+}
+.locationButton {
+  background: #6d42c7;
   color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: all 200ms ease-in-out;
+}
+.locationButton:hover {
+  background: #430f58;
+}
+.submitButton {
+  background: #0b5ed7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: all 200ms ease-in-out;
+}
+.submitButton:hover {
+  background: #062c80;
 }
 
-.App-link {
-  color: #61dafb;
+.container .active {
+  color: rgb(90, 98, 117);
+  cursor: default;
+  text-decoration: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container .active:hover {
+  text-decoration: none;
+}
+.weatherDesc {
+  text-align: center;
 }
